@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyah Bakery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 1. Bagian Hero -->
+    <header class="hero-section d-flex flex-column">
+        <nav class="navbar navbar-expand-lg navbar-dark pt-4 px-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="Logo" style="height: 50px;">
+                </a>
+                <a href="https://wa.me/6281234567890" class="btn btn-outline-gold d-lg-block" target="_blank">Hubungi
+                    Kami</a>
+            </div>
+        </nav>
+
+        <div
+            class="container flex-grow-1 d-flex flex-column justify-content-center align-items-center text-center text-white">
+            <h1 class="display-1">Bingkisan Terkasih untuk Orang Tersayang</h1>
+            <p class="lead col-lg-6 mx-auto">
+                Temukan koleksi hampers premium dari Dyah Bakery. Sempurna untuk temani momen Ramadan-mu.
+            </p>
+            <a href="#koleksi-produk" class="btn btn-gold btn-lg mt-3">Lihat Produk</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. Bagian Keunggulan (Dengan Ikon) -->
+        <section class="py-5 bg-dark-brown">
+            <div class="container">
+                <h2 class="text-center mb-5">Kenapa pilih Dyah Bakery?</h2>
+                <div class="row text-center">
+                    <!-- Item 1: Premium Quality -->
+                    <div class="col-md-4 mb-4">
+                        <i class="bi bi-gem display-4 text-gold mb-3"></i>
+                        <h3 class="h4">Premium Quality</h3>
+                        <p class="text-white-50">Hanya menggunakan bahan berkualitas tinggi untuk memastikan setiap hampers adalah apaya.</p>
+                    </div>
+                    <!-- Item 2: Made with Love -->
+                    <div class="col-md-4 mb-4">
+                        <i class="bi bi-heart-fill display-4 text-gold mb-3"></i>
+                        <h3 class="h4">Made with Love</h3>
+                        <p class="text-white-50">Setiap bingkisan dirangkai dengan tangan, penuh ketelitian dan cinta, karena kami percaya hadiah terbaik datang dari hati.</p>
+                    </div>
+                    <!-- Item 3: Always Fresh -->
+                    <div class="col-md-4 mb-4">
+                        <i class="bi bi-tree-fill display-4 text-gold mb-3"></i>
+                        <h3 class="h4">Always Fresh</h3>
+                        <p class="text-white-50">Kami menjamin kesegaran bahan baku yang diproses pada hari yang sama
+                            untuk kualitas rasa yang tak tertandingi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 3. Bagian Produk -->
+        <section id="koleksi-produk" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Temukan Hampers yang Tepat</h2>
+                <div class="row">
+                    <!-- Product Card 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card product-card h-100">
+                            <img src="images/logo.png" class="card-img-top" alt="Single Hampers"> <!-- Ganti gambar -->
+                            <div class="card-body text-center d-flex flex-column">
+                                <h3 class="card-title h4">Single Hampers</h3>
+                                <div class="price-wrapper mb-3">
+                                    <span class="original-price"><s>Rp 30.000</s></span>
+                                    <span class="discounted-price">Rp 25.000</span>
+                                </div>
+                                <p class="card-text text-white-50">Sebuah bingkisan personal yang manis untuk
+                                    menunjukkan perhatianmu.</p>
+                                <button type="button" class="btn btn-outline-gold mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#modalSingleHampers">
+                                    Lihat Detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card product-card h-100">
+                            <img src="images/logo.png" class="card-img-top" alt="Double Hampers"> <!-- Ganti gambar -->
+                            <div class="card-body text-center d-flex flex-column">
+                                <h3 class="card-title h4">Double Hampers</h3>
+                                <div class="price-wrapper mb-3">
+                                    <span class="original-price"><s>Rp 50.000</s></span>
+                                    <span class="discounted-price">Rp 45.000</span>
+                                </div>
+                                <p class="card-text text-white-50">Pilihan ideal untuk sahabat atau rekan kerja, berisi
+                                    kebahagiaan ganda.</p>
+                                <button type="button" class="btn btn-outline-gold mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#modalDoubleHampers">
+                                    Lihat Detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card product-card h-100">
+                            <img src="images/logo.png" class="card-img-top" alt="Family Hampers"> <!-- Ganti gambar -->
+                            <div class="card-body text-center d-flex flex-column">
+                                <h3 class="card-title h4">Family Hampers</h3>
+                                <div class="price-wrapper mb-3">
+                                    <span class="original-price"><s>Rp 80.000</s></span>
+                                    <span class="discounted-price">Rp 65.000</span>
+                                </div>
+                                <p class="card-text text-white-50">Berbagi kebahagiaan bersama keluarga besar dengan
+                                    pilihan terlengkap dan melimpah.</p>
+                                <button type="button" class="btn btn-outline-gold mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#modalFamilyHampers">
+                                    Lihat Detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Bagian Testimoni -->
+        <section class="py-5 bg-dark-brown">
+            <div class="container text-center col-lg-8 mx-auto">
+                <h2 class="text-center mb-4">Apa Kata Mereka?</h2>
+                <figure>
+                    <blockquote class="blockquote">
+                        <p class="h3 fst-italic">"Hampers dari Dyah Bakery benar-benar melebihi ekspektasi. Kemasannya
+                            mewah, isinya berkualitas. Penerimanya senang sekali!"</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer text-white-50 mt-2">
+                        Pelanggan Setia
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- 5. Final CTA -->
+        <section class="py-5 bg-accent">
+            <div class="container text-center">
+                <h2 class="mb-3 text-dark-brown">Siap Memberikan yang Terbaik?</h2>
+                <p class="lead col-lg-6 mx-auto text-dark-brown">Jangan tunda lagi untuk membuat seseorang tersenyum.
+                    Konsultasikan kebutuhan hampers Anda dengan kami sekarang.</p>
+                <a href="https://wa.me/6281234567890" class="btn btn-dark-brown-solid btn-lg mt-3" target="_blank">📞
+                    Hubungi Kami di WhatsApp</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal untuk Single Hampers -->
+    <div class="modal fade" id="modalSingleHampers" tabindex="-1" aria-labelledby="modalSingleHampersLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modalSingleHampersLabel">Detail: Single Hampers</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Ganti dengan gambar produk yang lebih besar/detail -->
+                            <img src="images/logo.png" class="img-fluid rounded" alt="Detail Single Hampers">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Isi dalam bingkisan:</h4>
+                            <ul class="list-unstyled">
+                                <li>✓ 1 Cookies Premium (250gr)</li>
+                                <li>✓ Voucher belanja Dyah Bakery</li>
+                                <li>✓ Kartu ucapan personal</li>
+                            </ul>
+                            <p class="mt-3">Dirangkai dalam keranjang rotan elegan yang dapat digunakan kembali.
+                                Sempurna sebagai hadiah personal untuk orang terdekat Anda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20LEON%20STORE,%20saya%20tertarik%20dengan%20Single%20Hampers."
+                        class="btn btn-gold" target="_blank">
+                        📞 Pesan via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalDoubleHampers" tabindex="-1" aria-labelledby="modalSingleHampersLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modalSingleHampersLabel">Detail: Double Hampers</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Ganti dengan gambar produk yang lebih besar/detail -->
+                            <img src="images/logo.png" class="img-fluid rounded" alt="Detail Double Hampers">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Isi dalam bingkisan:</h4>
+                            <ul class="list-unstyled">
+                                <li>✓ Cookies Premium (2 toples 250gr)</li>
+                                <li>✓ Voucher Eksklusif Dyah Bakery</li>
+                                <li>✓ Kartu ucapan personal</li>
+                            </ul>
+                            <p class="mt-3">Dirangkai dalam keranjang rotan elegan yang dapat digunakan kembali.
+                                Sempurna sebagai hadiah personal untuk orang terdekat Anda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20LEON%20STORE,%20saya%20tertarik%20dengan%20Single%20Hampers."
+                        class="btn btn-gold" target="_blank">
+                        📞 Pesan via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalFamilyHampers" tabindex="-1" aria-labelledby="modalSingleHampersLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modalSingleHampersLabel">Detail: Family Hampers</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Ganti dengan gambar produk yang lebih besar/detail -->
+                            <img src="images/logo.png" class="img-fluid rounded" alt="Detail Family Hampers">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Isi dalam bingkisan:</h4>
+                            <ul class="list-unstyled">
+                                <li>✓ Cookies Premium (3 toples 200gr)</li>
+                                <li>✓ Voucher Dyah Bakery</li>
+                                <li>✓ Kartu ucapan personal</li>
+                            </ul>
+                            <p class="mt-3">Dirangkai dalam keranjang rotan elegan yang dapat digunakan kembali.
+                                Sempurna sebagai hadiah personal untuk orang terdekat Anda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="https://wa.me/6281234567890?text=Halo%20LEON%20STORE,%20saya%20tertarik%20dengan%20Single%20Hampers."
+                        class="btn btn-gold" target="_blank">
+                        📞 Pesan via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. Footer -->
+    <footer class="text-center py-4">
+        <p class="text-white-50 mb-0">© 2026 Dyah Bakery. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

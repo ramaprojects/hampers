@@ -1,0 +1,152 @@
+/* Variabel & Pengaturan Dasar */
+:root {
+    --primary-color: #230e19;
+    /* Coklat Tua Pekat */
+    --accent-color: #f4d791;
+    /* Emas */
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--accent-color);
+}
+
+/* Helper Class */
+.bg-dark-brown {
+    background-color: #2a1520;
+}
+
+.bg-accent {
+    background-color: var(--accent-color);
+}
+
+.text-dark-brown {
+    color: var(--primary-color) !important;
+}
+
+.text-gold {
+    color: var(--accent-color) !important;
+    /* var(--accent-color) adalah #f4d791 */
+}
+
+/* 1. Bagian Hero */
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(rgba(35, 14, 25, 0.75), rgba(35, 14, 25, 0.75)), url('hero-background.jpg');
+    /* Ganti dengan gambar latar Anda */
+    background-size: cover;
+    background-position: center;
+}
+
+/* 2. Tombol Kustom */
+.btn-gold {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border-color: var(--accent-color);
+    font-weight: bold;
+}
+
+.btn-gold:hover {
+    background-color: #e9c878;
+    border-color: #e9c878;
+    color: var(--primary-color);
+}
+
+.btn-outline-gold {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    font-weight: 500;
+}
+
+.btn-outline-gold:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.btn-dark-brown-solid {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border-color: var(--primary-color);
+    font-weight: bold;
+}
+
+.btn-dark-brown-solid:hover {
+    background-color: #3b202d;
+    border-color: #3b202d;
+    color: var(--accent-color);
+}
+
+/* 3. Kartu Produk */
+.product-card {
+    background-color: #2a1520;
+    border: 1px solid rgba(244, 215, 145, 0.2);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.product-card .card-img-top {
+    height: 280px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #ffffff !important;
+}
+
+.price-wrapper {
+    color: #ffffff;
+}
+
+.original-price {
+    font-size: 0.88em;
+    color: #ffffff;
+}
+.discounted-price {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+/* Styling untuk Modal Produk */
+.modal-content {
+    background-color: #2a1520; /* Warna coklat tua */
+    border: 1px solid var(--accent-color);
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(244, 215, 145, 0.2);
+}
+
+.modal-header .modal-title {
+    color: var(--accent-color);
+}
+
+.modal-body h4 {
+    color: var(--accent-color);
+}
+
+
+/* 4. Testimoni */
+.blockquote {
+    color: var(--accent-color);
+}
