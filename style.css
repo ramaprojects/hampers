@@ -1,9 +1,6 @@
-/* Variabel & Pengaturan Dasar */
 :root {
     --primary-color: #230e19;
-    /* Coklat Tua Pekat */
     --accent-color: #f4d791;
-    /* Emas */
     --heading-font: 'Playfair Display', serif;
     --body-font: 'Montserrat', sans-serif;
 }
@@ -28,7 +25,6 @@ h6 {
     color: var(--accent-color);
 }
 
-/* Helper Class */
 .bg-dark-brown {
     background-color: #2a1520;
 }
@@ -43,19 +39,15 @@ h6 {
 
 .text-gold {
     color: var(--accent-color) !important;
-    /* var(--accent-color) adalah #f4d791 */
 }
 
-/* 1. Bagian Hero */
 .hero-section {
     min-height: 100vh;
-    background: linear-gradient(rgba(35, 14, 25, 0.75), rgba(35, 14, 25, 0.75)), url('hero-background.jpg');
-    /* Ganti dengan gambar latar Anda */
+    background: linear-gradient(rgba(35, 14, 25, 0.75), rgba(35, 14, 25, 0.75)), url('images/logo.pn');
     background-size: cover;
     background-position: center;
 }
 
-/* 2. Tombol Kustom */
 .btn-gold {
     background-color: var(--accent-color);
     color: var(--primary-color);
@@ -93,7 +85,10 @@ h6 {
     color: var(--accent-color);
 }
 
-/* 3. Kartu Produk */
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+}
+
 .product-card {
     background-color: #2a1520;
     border: 1px solid rgba(244, 215, 145, 0.2);
@@ -114,6 +109,28 @@ h6 {
     color: #ffffff !important;
 }
 
+/* Styling untuk Badge Produk Baru */
+.product-card {
+    position: relative;
+    /* Diperlukan agar posisi badge bisa diatur */
+    overflow: hidden;
+    /* Sembunyikan bagian badge yang keluar dari kartu */
+}
+
+.badge-new {
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 8px 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    transform: rotate(45deg);
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 .price-wrapper {
     color: #ffffff;
 }
@@ -122,14 +139,14 @@ h6 {
     font-size: 0.88em;
     color: #ffffff;
 }
+
 .discounted-price {
     font-size: 1.2em;
     color: #ffffff;
 }
 
-/* Styling untuk Modal Produk */
 .modal-content {
-    background-color: #2a1520; /* Warna coklat tua */
+    background-color: #2a1520;
     border: 1px solid var(--accent-color);
 }
 
@@ -145,8 +162,6 @@ h6 {
     color: var(--accent-color);
 }
 
-
-/* 4. Testimoni */
 .blockquote {
     color: var(--accent-color);
 }
