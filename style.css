@@ -131,6 +131,23 @@ h6 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.carousel-inner img{
+    height: 350px;
+    object-fit: cover;
+}
+
+.product-carousel .carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #c9a227;
+}
+
+.product-carousel .carousel-indicators .active{
+    background: var(--primary-color);
+}
+
 .price-wrapper {
     color: #ffffff;
 }
